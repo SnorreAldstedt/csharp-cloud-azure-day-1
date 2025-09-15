@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 // Add CORS service with policy that allows any origin
+// Comment for PR
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", builder =>
